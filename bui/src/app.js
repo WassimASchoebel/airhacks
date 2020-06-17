@@ -1,14 +1,17 @@
-console.log("Hello Web Standards 2");
+class Message extends HTMLElement{
 
-const html = (a, b, c) => { 
-    return "etwas zurueck " + a + b + c
-}
+    constructor() { 
+        super();
+        this.message = "JUG O.";
+    }
 
-const helloJug = (message) => { 
-    return html`JUG Oberpfalz says: ${message}`;
-    
-}
+    connectedCallback() { 
+        this.innerHTML = `
+            hello ${this.message}
+        `;
+    }
 
-console.log(helloJug("hello"));
+} 
 
+customElements.define("j-message",Message);
 

@@ -46,3 +46,7 @@ article{
     grid-area: article;
     background-color: crimson;
 }
+
+j-message{
+    font-size: 5em;
+}
