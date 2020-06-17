@@ -28,8 +28,13 @@ class Message extends HTMLElement{
         console.log(value);
     }
 
-    save() { 
+
+
+    async save() { 
         console.log("saving the application");
+        const response = await fetch('http://localhost:8080/hello');
+        const { content,title } = await response.json();
+        console.log("##############",content,title);
     }
 
 } 
