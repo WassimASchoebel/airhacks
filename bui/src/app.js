@@ -1,8 +1,9 @@
+import { sayHello } from "./client.js";
 class Message extends HTMLElement{
 
     constructor() { 
         super();
-        this.message = "JUG O.";
+        this.message = sayHello("JUG O.");
     }
 
     connectedCallback() { 
