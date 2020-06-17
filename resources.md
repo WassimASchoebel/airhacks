@@ -1,9 +1,6 @@
 # Links and Resources
 
-https://jakarta.ee
-https://microprofile.io
-https://quarkus.io
-https://www.graalvm.org
+https://docs.emmet.io/cheat-sheet/
 
 https://airhacks.live
 https://airhacks.tv
